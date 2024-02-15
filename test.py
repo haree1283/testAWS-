@@ -1,36 +1,3 @@
-# import boto3
-# import boto3
-#
-# # Create an S3 client
-# s3 = boto3.client('s3')
-#
-# # List S3 buckets
-# response = s3.list_buckets()
-# for bucket in response['Buckets']:
-#     print(f'Bucket Name: {bucket["Name"]}')
-#
-# # Initialize AWS client for API Gateway
-# client = boto3.client('apigateway')
-#
-# # Specify your API ID (replace with your actual API ID)
-# api_id = 'YOUR_API_ID'
-# Access_key_ID= "AKIA4F52A4XRZFMOAKUZ"
-# Secret_access_key ="GNwOm3ub2RZtIamPox5FzxgqneF65rpJpkYUpW8m"
-# # Create the "test" resource under the root "/"
-# response = client.create_resource(
-#     restApiId=api_id,
-#     parentId='/',
-#     pathPart='test'
-# )
-#
-# # Get the resource ID for the "test" resource
-# resource_id = response['id']
-#
-# # Deploy the API to make the changes effective
-# client.create_deployment(
-#     restApiId=api_id,
-#     stageName='prod'  # Replace with your desired stage name
-# )
 
 import boto3
 
